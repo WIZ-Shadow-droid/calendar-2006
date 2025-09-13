@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Philippines Calendar 2006</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style>
+/* ===== General Layout ===== */
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* ===== Each Month Container ===== */
+.month {
+  width: 320px;
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #00f0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00f0ff, 0 0 40px #0088aa inset;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.month:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff00ff, 0 0 50px #00f0ff inset;
+}
+
+/* ===== Month Header ===== */
+.month header {
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+  border-bottom: 1px solid #00f0ff;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+/* ===== Weekdays ===== */
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  color: #ff00ff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.weekdays div {
+  padding: 5px 0;
+  text-shadow: 0 0 8px #ff00ff;
+}
+
+/* ===== Days ===== */
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+}
+
+.days div,
+.days a {
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover effect for normal days */
+.days div:hover {
+  background: rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 10px #00f0ff;
+}
+
+/* ===== Holidays ===== */
+.holiday {
+  color: #ff4444;
+  font-weight: bold;
+  text-shadow: 0 0 8px #ff0000, 0 0 15px #ff0000;
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+}
+
+/* Holiday hover glow */
+.holiday:hover {
+  background: rgba(255, 0, 0, 0.4);
+  box-shadow: 0 0 15px #ff0000, 0 0 25px #ff3333;
+  color: #fff;
+}   
+    </style>
+
+<div class="month" id="january">
+  <header>January 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div>
+    <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div>  <a href="happy newyear.mp4" target="_blank" class="holiday">1</a>
+    <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+    <div>7</div><div>8</div><div>9</div><div>10</div>
+    <div>11</div><div>12</div><div>13</div><div>14</div>
+    <div>15</div><div>16</div><div>17</div><div>18</div>
+    <div>19</div><div>20</div><div>21</div><div>22</div>
+    <div>23</div><div>24</div><div>25</div><div>26</div>
+    <div>27</div><div>28</div><div>29</div><div>30</div>
+    <div>31</div>
+  </div>
+</div>
+<!-- ===== FEBRUARY ===== -->
+<div class="month" id="feb">
+  <header>February 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div>
+    <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div>
+    <div>12</div><div>13</div><a href="valentines day.mp4" target="_blank" class="holiday">14</a><div>15</div><div>16</div><div>17</div><div>18</div>
+    <div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div>
+    <div>26</div><div>27</div><div>28</div>
+  </div>
+</div>
+
+<!-- ===== MARCH ===== -->
+<div class="month" id="mar">
+  <header>March 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div>
+    <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div>
+    <div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div>
+    <div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div>
+    <div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+  </div>
+</div>
+
+<!-- ===== APRIL ===== -->
+<div class="month" id="apr">
+  <header>April 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div></div><div></div><div>1</div>
+    <div>2</div><div>3</div><div>4</div><div>5</div>
+    <a href="Maundy_Thursday.mp4" target="_blank" class="holiday">6</a>
+    <a href="good friday.mp4" target="_blank" class="holiday">7</a>
+    <a href="black saturday.mp4" target="_blank" class="holiday">8</a>
+    <a href="easter sunday.mp4" target="_blank" class="holiday">9</a>
+    <a href="day valor.mp4" target="_blank" class="holiday">10</a>
+    <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
+    <div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div>
+    <div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+  </div>
+</div>
+
+<!-- ===== MAY ===== -->
+<div class="month" id="may">
+  <header>May 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div> <!-- Labor Day -->
+    <a href="labor day.mp4" target="_blank" class="holiday">1</a>
+    <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+    <div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+    <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+    <div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+    <div>28</div><div>29</div><div>30</div><div>31</div>
+  </div>
+</div>
+
+<!-- ===== JUNE ===== -->
+<div class="month" id="jun">
+  <header>June 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div>1</div><div>2</div><div>3</div>
+    <div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+    <a href="independence day.mp4" target="_blank" class="holiday">12</a>
+    <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div>
+    <div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+    <div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+  </div>
+</div>
+
+<!-- ===== JULY ===== -->
+<div class="month" id="jul">
+  <header>July 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div></div><div></div><div>1</div>
+    <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div>
+    <div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
+    <div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div>
+    <div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div>
+    <div>30</div><div>31</div>
+  </div>
+</div>
+
+<!-- ===== AUGUST ===== -->
+<div class="month" id="aug">
+  <header>August 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+    <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
+    <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div>
+    <a href="nonoy.mp4" target="_blank" class="holiday">21</a>
+    <a href="heroes.mp4" target="_blank" class="holiday">28</a>
+    <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+    <div>29</div><div>30</div><div>31</div>
+  </div>
+</div>
+
+<!-- ===== SEPTEMBER ===== -->
+<div class="month" id="sep">
+  <header>September 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div>1</div><div>2</div>
+    <div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+    <div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div>
+    <div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+    <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+  </div>
+</div>
+
+<!-- ===== OCTOBER ===== -->
+<div class="month" id="oct">
+  <header>October 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div>
+    <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div>
+    <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div>
+    <div>22</div><a href="ramdam.mp4" target="blank" class="holiday">23</a><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+    <div>29</div><div>30</div><div>31</div>
+  </div>
+</div>
+
+<!-- ===== NOVEMBER ===== -->
+<div class="month" id="nov">
+  <header>November 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div>1</div> <!-- All Saints' Day -->
+    <a href="araw ng patay.mp4" target="_blank" class="holiday">1</a>
+    <a href="all souls day.mp4" target="_blank" class="holiday">2</a>
+    <div>3</div><div>4</div>
+    <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div>
+    <div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div>
+    <div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div>
+    <div>26</div><div>27</div><div>28</div><div>29</div><a href="bonifacio.mp4" target="_blank" class="holiday">30</a>
+  </div>
+</div>
+
+<!-- ===== DECEMBER ===== -->
+<div class="month" id="dec">
+  <header>December 2006</header>
+  <div class="weekdays">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div class="days">
+    <div></div><div></div><div></div><div></div><div>1</div><div>2</div>
+    <div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+    <a>8</a>
+    <div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div>
+    <div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+    <a href="christmas eve.mp4" target="_blank" class="holiday">24</a>
+    <a href="christmas.mp4" target="_blank" class="holiday">25</a>
+    <div>26</div> <div>27</div> <div>28</div> <div>29</div>
+    <a href="rizal day.mp4" target="_blank" class="holiday">30</a>
+    <a href="newyears eve.mp4" target="_blank" class="holiday">31</a>
